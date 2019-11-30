@@ -6,6 +6,7 @@ today	=	datetime.datetime.now()
 today	=	today.strftime("%F")
 
 todayFile	=	today	+	'.txt'
+todayFile	=	'day_entry_files/'+todayFile
 journalEntry	=	[]
 i	=	''
 emp	=	''

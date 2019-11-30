@@ -3,20 +3,15 @@ import journal_functions as j
 x	=	datetime.datetime.now()
 month	=	input('enter month num:')
 if month	==	'':
-	month	=	x.strftime('%')
-else:
-	month	=	int(month)
+	month	=	x.strftime('%m')
 date	=	input('enter date:')
 if date	==	'':
-	date	=	x.strftime('%')
-else:
-	date	=	int(date)
+	date	=	x.strftime('%d')
 year	=	input('enter year')
 if year	==	'':
 	year	=	x.strftime('%Y')
-else:
-	year	=	int(year)
-with open('2019-11-30.txt') as f:
+theFile	=	'day_entry_files/' + year + '-' + month + '-' + date+ '.txt'
+with open(theFile) as f:
 	allLines	=	f.readlines()
 emp	=	''
 
